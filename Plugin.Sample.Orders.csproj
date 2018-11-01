@@ -17,14 +17,17 @@
     <Compile Remove="Controllers\**" />
     <Compile Remove="Entities\**" />
     <Compile Remove="Models\**" />
+    <Compile Remove="Pipelines\Arguments\**" />
     <EmbeddedResource Remove="Components\**" />
     <EmbeddedResource Remove="Controllers\**" />
     <EmbeddedResource Remove="Entities\**" />
     <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Pipelines\Arguments\**" />
     <None Remove="Components\**" />
     <None Remove="Controllers\**" />
     <None Remove="Entities\**" />
     <None Remove="Models\**" />
+    <None Remove="Pipelines\Arguments\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,9 +54,5 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
     <Reference Include="System.Transactions" />
     <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pipelines\Arguments\" />
   </ItemGroup>
 </Project>
